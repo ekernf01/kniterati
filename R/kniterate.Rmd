@@ -1,4 +1,5 @@
-## ------------------------------------------------------------------------
+
+```{r}
 #' Given the root of a package, knit .Rmd files into R code.
 #'
 #' @export
@@ -11,4 +12,4 @@ kniterate = function( package_root = getwd() ){
     knitr::purl(file.path( "R", package_code_rmd[[i]] ), output = file.path( "R", package_code_r  [[i]] ) )
   }
 }
-
+```
